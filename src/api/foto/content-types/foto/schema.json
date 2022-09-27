@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fotos",
+  "info": {
+    "singularName": "foto",
+    "pluralName": "fotos",
+    "displayName": "Foto",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application",
+      "mappedBy": "foto"
+    },
+    "Photo": {
+      "type": "string"
+    }
+  }
+}

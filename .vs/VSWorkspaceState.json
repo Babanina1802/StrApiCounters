@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\api",
+    "\\src\\api\\type-counter",
+    "\\src\\api\\type-counter\\content-types",
+    "\\src\\api\\type-counter\\content-types\\type-counter"
+  ],
+  "SelectedNode": "\\src\\api\\type-counter\\content-types\\type-counter\\schema.json",
+  "PreviewInSolutionExplorer": false
+}

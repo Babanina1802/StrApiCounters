@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "streets",
+  "info": {
+    "singularName": "street",
+    "pluralName": "streets",
+    "displayName": "Street",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application",
+      "mappedBy": "street"
+    },
+    "CityId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::city.city",
+      "inversedBy": "streets"
+    },
+    "street_name": {
+      "type": "text",
+      "unique": true,
+      "required": false
+    }
+  }
+}

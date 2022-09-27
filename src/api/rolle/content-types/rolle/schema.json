@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rolles",
+  "info": {
+    "singularName": "rolle",
+    "pluralName": "rolles",
+    "displayName": "Roles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UsersId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "RolesId"
+    },
+    "Roles": {
+      "type": "string"
+    }
+  }
+}

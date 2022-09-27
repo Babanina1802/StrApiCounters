@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cities",
+  "info": {
+    "singularName": "city",
+    "pluralName": "cities",
+    "displayName": "City",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city_name": {
+      "type": "text"
+    },
+    "AreaId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::area.area",
+      "inversedBy": "CitiesId"
+    },
+    "applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::application.application",
+      "mappedBy": "city"
+    },
+    "streets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::street.street",
+      "mappedBy": "CityId"
+    }
+  }
+}
