@@ -13,7 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "country_name": {
-      "type": "text"
+      "type": "string",
+      "unique": false,
+      "required": false
     },
     "applications": {
       "type": "relation",
