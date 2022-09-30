@@ -62,15 +62,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "RolesId": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::rolle.rolle",
-      "inversedBy": "UsersId"
-    },
-    "PhoneNamber": {
-      "type": "string"
     }
   }
 }

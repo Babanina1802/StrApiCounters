@@ -12,14 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "UsersId": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "plugin::users-permissions.user",
-      "mappedBy": "RolesId"
-    },
     "Roles": {
       "type": "string"
+    },
+    "people": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::person.person",
+      "mappedBy": "role"
     }
   }
 }
