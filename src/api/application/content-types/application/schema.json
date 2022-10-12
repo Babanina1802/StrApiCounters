@@ -8,13 +8,10 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "date_creation": {
-      "type": "datetime"
-    },
     "creator": {
       "type": "text"
     },
